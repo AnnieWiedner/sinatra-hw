@@ -1,0 +1,13 @@
+<a href="/Chicago/view">Chicago</a>
+<a href="/Denver/view">Denver</a>
+<a href="/Seattle/view">Seattle</a>
+<a href="/Nashville/view">Nashville</a>
+<a href="/Miami/view">Miami</a>
+
+<h1><%= @city[:name] %></h1>
+<h2>Top Attractions</h2>
+<ol>
+  <% @city[:top_attractions].each do |attraction| %>
+    <li><%= attraction %></li>
+  <% end %>
+</ol>
